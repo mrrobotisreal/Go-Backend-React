@@ -34,18 +34,18 @@ type Movie struct {
 
 // Genre is the type for genre
 type Genre struct {
-	ID        int       `json:"id"`
+	ID        int       `json:"_"`
 	GenreName string    `json:"genre_name"`
-	CreatedAt time.Time `json:"created_at"`
-	UpdatedAt time.Time `json:"updated_at"`
+	CreatedAt time.Time `json:"_"`
+	UpdatedAt time.Time `json:"_"`
 }
 
 // MovieGenre is the type for movie genre
 type MovieGenre struct {
-	ID        int       `json:"id"`
-	MovieID   int       `json:"movie_id"`
-	GenreID   int       `json:"genre_id"`
+	ID        int       `json:"_"`
+	MovieID   int       `json:"_"`
+	GenreID   int       `json:"_"`
 	Genre     Genre     `json:"genre"`
-	CreatedAt time.Time `json:"created_at"`
-	UpdatedAt time.Time `json:"updated_at"`
+	CreatedAt time.Time `json:"_"`
+	UpdatedAt time.Time `json:"_"`
 }
